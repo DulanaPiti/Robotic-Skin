@@ -1,0 +1,109 @@
+[Format]      =  4.0
+[Frequency]   =  0
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  1
+[LengthUnits] =  millimeters
+[ProblemType] =  axisymmetric
+[Coordinates] =  cartesian
+[ACSolver]    =  0
+[PrevType]    =  0
+[PrevSoln]    =  ""
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 0
+[BlockProps]  = 3
+  <BeginBlock>
+    <BlockName> = "Air"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Copper"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 58
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "MRE_Skin"
+    <Mu_x> = 1.5
+    <Mu_y> = 1.5
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+[CircuitProps]  = 1
+  <BeginCircuit>
+    <CircuitName> = "Coil_Current"
+    <TotalAmps_re> = 3
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+[NumPoints] = 10
+0	-50	0	0
+0	50	0	0
+5	0	0	0
+15	0	0	0
+15	10	0	0
+5	10	0	0
+0	12	0	0
+20	12	0	0
+20	15	0	0
+0	15	0	0
+[NumSegments] = 10
+0	6	-1	0	0	0
+2	3	-1	0	0	0
+3	4	-1	0	0	0
+4	5	-1	0	0	0
+5	2	-1	0	0	0
+6	9	-1	0	0	0
+6	7	-1	0	0	0
+7	8	-1	0	0	0
+9	1	-1	0	0	0
+8	9	-1	0	0	0
+[NumArcSegments] = 1
+0	1	180	1	0	0	0	1
+[NumHoles] = 0
+[NumBlockLabels] = 3
+10	5	2	-1	1	0	0	300	0
+10	13.5	3	-1	0	0	0	1	0
+10	30	1	-1	0	0	0	1	0
